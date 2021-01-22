@@ -18,7 +18,6 @@
             margin: 0px;
             padding: 0.5rem;
             background-color: var(--primary-color);
-            display : block;
             text-align: center;
         }
         .nav-header > h2 {
@@ -26,6 +25,7 @@
         }
         .nav-footer {
             text-align: center;
+            margin: 0px;
         }
         textarea {
             width: 80%;
@@ -34,9 +34,7 @@
             margin: 1rem;
             padding: 1rem;
         }
-        #btn-translate {
-            margin: 0 20px;
-        }
+        
         #output {
             width: 80%;
             height: 10vh;
@@ -45,6 +43,7 @@
             padding: 1rem;
         }
         #btn-translate {
+            margin: 0 20px;
             border-radius: 0.5rem;
             padding: 0.5rem 0.5rem;
             background-color: var(--primary-color);
@@ -60,12 +59,14 @@
     <button id="btn-translate">translate</button>
     <h3> Your output will come here 👇</h2>
     <div id="output"></div>
+<footer>
     <div class="nav nav-footer">
         <h3 class="nav">about</h3>
         <p> Are you a fan of minions? Did you know that the gibberish they say is an actual 
             language. Use the translator to convert your text from English to Minion speak or 
             Banana language.</p>
     </div>
+</footer>
     <script src="index.js"></script>
 </body>
 </html>
