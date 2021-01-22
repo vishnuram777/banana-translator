@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>banana speak</title>
+    <style>
+        :root {
+            --primary-color : #F2C94C;
+        }
+        body {
+            border:0px;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .nav {
+            margin: 0px;
+            padding: 0.5rem;
+            background-color: var(--primary-color);
+            display : block;
+            text-align: center;
+        }
+        .nav-header > h2 {
+            text-align: center;
+        }
+        .nav-footer {
+            text-align: center;
+            margin: auto;
+        }
+        textarea {
+            width: 80%;
+            height: 20vh;
+            display: block;
+            margin: 1rem;
+            padding: 1rem;
+        }
+        #btn-translate {
+            margin: 0 20px;
+        }
+        #output {
+            width: 80%;
+            height: 10vh;
+            border: 1px solid black;
+            margin: 1rem;
+            padding: 1rem;
+        }
+        #btn-translate {
+            border-radius: 0.5rem;
+            padding: 0.5rem 0.5rem;
+            background-color: var(--primary-color);
+        }
+    </style>
 </head>
 <body>
-    <h1>talk banana</h1>
+   <div class="nav nav-header">
+        <h2>banana talk</h2>
+   </div>
+    
+    <textarea  id="input" cols="30" placeholder="Enter your text here"></textarea>
+    <button id="btn-translate">translate</button>
+    <h3> Your output will come here 👇</h2>
+    <div id="output"></div>
+    <div class="nav nav-footer">
+        <h3 class="nav">about</h3>
+        <p> Are you a fan of minions? Did you know that the gibberish they say is an actual 
+            language. Use the translator to convert your text from English to Minion speak or 
+            Banana language.</p>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
